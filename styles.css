@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom right, #ffe4e1, #fff5f5);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: left 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.page.active {
+    left: 0;
+}
+
+#page1 {
+    background-image: url('flower-border.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid #ffb6c1;
+    border-radius: 15px;
+}
+
+.cover-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 3em;
+    color: #d63384;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+}
